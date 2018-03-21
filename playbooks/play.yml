@@ -1,0 +1,7 @@
+- name: Print variable
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Print variable
+      debug:
+        msg: "{{ test_var }}"
